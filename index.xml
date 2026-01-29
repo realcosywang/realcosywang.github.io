@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://realcosywang.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jan 2026 17:14:04 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://realcosywang.github.io/posts/test/</link>
+      <pubDate>Wed, 28 Jan 2026 17:14:04 +0800</pubDate>
+      
+      <guid>https://realcosywang.github.io/posts/test/</guid>
+      
+        <description>&lt;h1 id=&#34;这只是一个测试&#34;&gt;这只是一个测试&lt;/h1&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
