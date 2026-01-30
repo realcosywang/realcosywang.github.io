@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Yifei</title>
     <link>https://realcosywang.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Yifei</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Wed, 28 Jan 2026 17:14:04 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>https://realcosywang.github.io/posts/test/</link>
+      <link>https://realcosywang.github.io/posts/%E6%B5%8B%E8%AF%95test/</link>
       <pubDate>Wed, 28 Jan 2026 17:14:04 +0800</pubDate>
       
-      <guid>https://realcosywang.github.io/posts/test/</guid>
+      <guid>https://realcosywang.github.io/posts/%E6%B5%8B%E8%AF%95test/</guid>
       
-        <description>&lt;h1 id=&#34;这只是一个测试&#34;&gt;这只是一个测试&lt;/h1&gt;</description>
+        <description>&lt;h2 id=&#34;这是二级标题&#34;&gt;这是二级标题&lt;/h2&gt;
+&lt;p&gt;这里是正文&lt;/p&gt;</description>
       
     </item>
     

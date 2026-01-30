@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://realcosywang.github.io/</loc>
-    <lastmod>2026-01-28T17:14:04+08:00</lastmod>
-  </url><url>
     <loc>https://realcosywang.github.io/posts/</loc>
     <lastmod>2026-01-28T17:14:04+08:00</lastmod>
   </url><url>
-    <loc>https://realcosywang.github.io/posts/test/</loc>
+    <loc>https://realcosywang.github.io/posts/%E6%B5%8B%E8%AF%95test/</loc>
+    <lastmod>2026-01-28T17:14:04+08:00</lastmod>
+  </url><url>
+    <loc>https://realcosywang.github.io/</loc>
     <lastmod>2026-01-28T17:14:04+08:00</lastmod>
   </url><url>
     <loc>https://realcosywang.github.io/categories/</loc>
