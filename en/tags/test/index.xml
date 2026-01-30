@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Cosy Zone</title>
+    <link>https://realcosywang.github.io/en/tags/test/</link>
+    <description>Recent content in Test on Cosy Zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Jan 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/en/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second Test Post</title>
+      <link>https://realcosywang.github.io/en/post/second-post/</link>
+      <pubDate>Fri, 30 Jan 2026 10:00:00 +0800</pubDate>
+      
+      <guid>https://realcosywang.github.io/en/post/second-post/</guid>
+      
+        <description>&lt;h2 id=&#34;this-is-the-second-post&#34;&gt;This is the second post&lt;/h2&gt;
+&lt;p&gt;This post shares the &amp;ldquo;test&amp;rdquo; tag and &amp;ldquo;tech&amp;rdquo; category with the first post.&lt;/p&gt;
+&lt;p&gt;Click on tags or categories to see all related posts.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Test Post</title>
+      <link>https://realcosywang.github.io/en/post/test-post/</link>
+      <pubDate>Wed, 28 Jan 2026 17:14:04 +0800</pubDate>
+      
+      <guid>https://realcosywang.github.io/en/post/test-post/</guid>
+      
+        <description>&lt;h2 id=&#34;this-is-a-heading&#34;&gt;This is a heading&lt;/h2&gt;
+&lt;p&gt;This is the content of the test post.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
