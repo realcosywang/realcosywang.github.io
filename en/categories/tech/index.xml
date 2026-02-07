@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Cosy Zone</title>
+    <link>https://realcosywang.github.io/en/categories/tech/</link>
+    <description>Recent content in Tech on Cosy Zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Feb 2026 15:18:49 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/en/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Free Static Site from Scratch</title>
+      <link>https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/</link>
+      <pubDate>Tue, 03 Feb 2026 15:18:49 +0800</pubDate>
+      
+      <guid>https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/</guid>
+      
+        <description>Building a free static site with Hugo and GitHub Pages</description>
+      
+    </item>
+    
+  </channel>
+</rss>

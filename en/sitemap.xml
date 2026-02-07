@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
+  </url><url>
     <loc>https://realcosywang.github.io/en/categories/</loc>
-    <lastmod>2026-01-31T08:34:40+08:00</lastmod>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -14,6 +17,74 @@
                 hreflang="en"
                 href="https://realcosywang.github.io/en/categories/"
                 />
+  </url><url>
+    <loc>https://realcosywang.github.io/en/tags/githubpages/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://realcosywang.github.io/zh/tags/githubpages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://realcosywang.github.io/en/tags/githubpages/"
+                />
+  </url><url>
+    <loc>https://realcosywang.github.io/en/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://realcosywang.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://realcosywang.github.io/en/"
+                />
+  </url><url>
+    <loc>https://realcosywang.github.io/en/tags/hugo/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://realcosywang.github.io/zh/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://realcosywang.github.io/en/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://realcosywang.github.io/en/post/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://realcosywang.github.io/zh/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://realcosywang.github.io/en/post/"
+                />
+  </url><url>
+    <loc>https://realcosywang.github.io/en/tags/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://realcosywang.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://realcosywang.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://realcosywang.github.io/en/categories/tech/</loc>
+    <lastmod>2026-02-03T15:18:49+08:00</lastmod>
   </url><url>
     <loc>https://realcosywang.github.io/en/tags/forme/</loc>
     <lastmod>2026-01-31T08:34:40+08:00</lastmod>
@@ -41,47 +112,8 @@
                 href="https://realcosywang.github.io/en/post/hello-world/"
                 />
   </url><url>
-    <loc>https://realcosywang.github.io/en/</loc>
-    <lastmod>2026-01-31T08:34:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://realcosywang.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://realcosywang.github.io/en/"
-                />
-  </url><url>
     <loc>https://realcosywang.github.io/en/categories/life/</loc>
     <lastmod>2026-01-31T08:34:40+08:00</lastmod>
-  </url><url>
-    <loc>https://realcosywang.github.io/en/post/</loc>
-    <lastmod>2026-01-31T08:34:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://realcosywang.github.io/zh/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://realcosywang.github.io/en/post/"
-                />
-  </url><url>
-    <loc>https://realcosywang.github.io/en/tags/</loc>
-    <lastmod>2026-01-31T08:34:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://realcosywang.github.io/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://realcosywang.github.io/en/tags/"
-                />
   </url><url>
     <loc>https://realcosywang.github.io/en/about/</loc>
     <xhtml:link

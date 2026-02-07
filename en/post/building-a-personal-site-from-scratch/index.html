@@ -1,0 +1,784 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+      
+        Building a Free Static Site from Scratch |
+      Cosy Zone
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.155.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Cosy Zone" />
+  <meta
+    name="description"
+    content="Building a free static site with Hugo and GitHub Pages"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.d1a2db4db62630dc690a91ef034ed2fbecab93af4a610b9b8966d9f96705289c.css" integrity="sha256-0aLbTbYmMNxpCpHvA07S&#43;&#43;yrk69KYQubiWbZ&#43;WcFKJw=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Building a Free Static Site from Scratch">
+  <meta name="twitter:description" content="Building a free static site with Hugo and GitHub Pages">
+
+
+
+  
+  <meta property="og:url" content="https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/">
+  <meta property="og:site_name" content="Cosy Zone">
+  <meta property="og:title" content="Building a Free Static Site from Scratch">
+  <meta property="og:description" content="Building a free static site with Hugo and GitHub Pages">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-02-03T15:18:49+08:00">
+    <meta property="article:modified_time" content="2026-02-03T15:18:49+08:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="GithubPages">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Building a Free Static Site from Scratch",
+        "headline": "Building a Free Static Site from Scratch",
+        "alternativeHeadline": "",
+        "description": "
+      Building a free static site with Hugo and GitHub Pages
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/realcosywang.github.io\/en\/post\/building-a-personal-site-from-scratch\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "dateCreated": "2026-02-03T15:18:49.00Z",
+        "datePublished": "2026-02-03T15:18:49.00Z",
+        "dateModified": "2026-02-03T15:18:49.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Cosy Zone",
+            "url": "https://realcosywang.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/realcosywang.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/realcosywang.github.io\/en\/post\/building-a-personal-site-from-scratch\/",
+        "wordCount" : "1845",
+        "genre" : [ 
+      
+      "Tech"
+
+    ],
+        "keywords" : [ 
+      
+      "Hugo"
+
+    
+      
+        ,
+
+      
+      "GithubPages"
+
+    ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/en">Yifei</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Hello, I'm Yifei</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/realcosywang"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Github"
+            title="Github"
+          >
+            <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Cosy Zone
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/en/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/en/post/"
+              
+              title=""
+              >Post</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/en/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/en/contact/"
+              
+              title=""
+              >Contact</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/images/thumbnail-en-Hugo%20and%20github.png" alt="Thumbnail image" />
+      </div>
+    
+    <div class="post__content">
+      
+        <h1>Building a Free Static Site From Scratch</h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  Feb 3, 2026 15:18
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">4-minute read</span>
+          </li>
+        </ul>
+      <p>Building a free static site with Hugo and GitHub Pages</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To quickly set up a <a href="https://baike.baidu.com/item/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2776875">static site</a>, you need a basic grasp of the following.</p>
+<ul>
+<li>
+<p>A GitHub account</p>
+</li>
+<li>
+<p>Git installed</p>
+</li>
+<li>
+<p>Ability to use the terminal</p>
+</li>
+</ul>
+<p>You might already be thinking it’s too much trouble, but don’t worry—all of this is well documented online and easy to pick up. This article won’t go into those details. With these in place, we can start building.</p>
+<h2 id="installing-hugo">Installing Hugo</h2>
+<p>On macOS, install Hugo with <a href="https://blog.csdn.net/weixin_41918841/article/details/112545539">Homebrew</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><p>Verify the installation with <code>version</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><p>This article uses <code>hugo v0.155.0</code>.</p>
+<h2 id="initializing-the-project">Initializing the project</h2>
+<p>After Hugo is installed, initialize a new project. <code>cd</code> into the folder where you want the project, then run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site &lt;your-project-name&gt;
+</span></span></code></pre></div><blockquote>
+<p>In this article, <code>&lt;&gt;</code> means something you should replace. If your project is named <code>my-site</code>, the command would be <code>hugo new site my-site</code>.</p>
+</blockquote>
+<p>You should then see a structure like this:</p>
+<pre tabindex="0"><code>my-site/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── content/
+├── data/
+├── i18n/
+├── layouts/
+├── static/
+├── themes/
+└── hugo.toml
+</code></pre><h2 id="configuring-the-theme">Configuring the theme</h2>
+<p>Choose a theme you like from the <a href="https://themes.gohugo.io/">Hugo community</a>.</p>
+<p>This guide uses Anatole. Open the theme’s page and find its GitHub link.</p>
+<figure>
+  <img src="/images/pic-hugo-community-detail.png" alt="Detail page" width="1000">
+  <figcaption>Detail page</figcaption>
+</figure>
+<p>You can fork the theme to your own GitHub and add it as a Git submodule.</p>
+<p><strong>Unless noted otherwise, all following commands are run from <code>/&lt;your-project-name&gt;</code>.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd  &lt;your-project-name&gt;/
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add &lt;your-github-url&gt;/&lt;your-theme-name&gt; themes/&lt;your-theme-name&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>example:
+</span></span><span style="display:flex;"><span>cd my-site
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/realcosywang/anatole themes/anatole
+</span></span></code></pre></div><blockquote>
+<p>Q: Why fork the theme instead of using the original repo?</p>
+<p>A: After you customize the theme, you may diverge from upstream. A fork keeps your changes under version control and makes updates easier. The docs also recommend forking the theme to your own account.</p>
+</blockquote>
+<p>Add one line to <code>hugo.toml</code> (older Hugo used <code>config.toml</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;anatole&#34;</span>
+</span></span></code></pre></div><p>Your site is set up. Start the local server with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><p>Open <code>http://localhost:1313/</code> in your browser to see the themed site. First step done. Next we’ll refine the content and config.</p>
+<p>While the server is running, changes are applied live; you don’t need to restart. Leave it running for the next steps.</p>
+<h2 id="creating-a-post">Creating a post</h2>
+<p>Create a new post with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new post/test-post.md
+</span></span></code></pre></div><p>The file is created under <code>content/post/</code>. Don’t rename the <code>post</code> directory; it’s used by the theme. In older Hugo versions the generated file had a <code>draft</code> field: set it to <code>true</code> to publish, or the post stays draft.</p>
+<p>Refresh the browser to see the new post.</p>
+<figure>
+  <img src="/images/pic-hugo-test-post.png" alt="New post" width="1000">
+  <figcaption>New post</figcaption>
+</figure>
+<h2 id="connecting-github-and-publishing">Connecting GitHub and publishing</h2>
+<p>Step 1: <strong>Create a GitHub repository</strong></p>
+<ol>
+<li>After logging in, click your avatar (top right), then <strong>Your repositories</strong> in the dropdown.</li>
+<li>Click <strong>New</strong>.</li>
+<li>On <strong>Create a new repository</strong>:</li>
+<li>Set <strong>Repository name</strong> to <code>[your-github-username].github.io</code>. For example, with username <code>realcosywang</code>, use <code>realcosywang.github.io</code>. Then click <strong>Create repository</strong>.</li>
+</ol>
+<p>Step 2: Build the site with Hugo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>This creates a <code>public</code> folder at the project root. Everything inside is your static site. After any update, push the contents of <code>public</code> to GitHub.</p>
+<p>Step 3: Push to <code>master</code> (first time)</p>
+<p>For the first push, run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/realcosywang/realcosywang.github.io
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><p>After a few minutes, your site will be available at your GitHub Pages URL, matching what you see with <code>hugo server</code> locally.</p>
+<p>Step 4: For later updates, after running <code>hugo</code>, go into <code>public</code> and push:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><h2 id="refining-configuration">Refining configuration</h2>
+<p>By now the site has one post and is mostly empty. Next we’ll fill in config and content.</p>
+<p>Hugo can use a single <code>hugo.toml</code>, but splitting config is cleaner and recommended. Use a structure like:</p>
+<pre tabindex="0"><code>config/
+└── _default/
+    ├── params.toml
+    ├── menus.toml
+    └── languages.toml
+</code></pre><p>Create the files with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p config/_default <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>touch config/_default/params.toml <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>      config/_default/menus.toml <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>      config/_default/languages.toml
+</span></span></code></pre></div><h3 id="profile">Profile</h3>
+<p>First, set up your profile.</p>
+<p>Put an avatar at <code>static/images/profile.jpg</code>, then configure the following.</p>
+<p><strong>hugo.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span> <span style="color:#75715e"># actual domain</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;anatole&#39;</span> <span style="color:#75715e"># theme in use</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;zh&#34;</span> <span style="color:#75715e"># default language</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguageInSubdir</span> = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># whether default language appears in URL path</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">true</span> <span style="color:#75715e"># enable CJK reading time</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#34;categories&#34;</span> <span style="color:#75715e"># category taxonomy name</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span> <span style="color:#75715e"># tag taxonomy name</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><blockquote>
+<p>⚠️ WARNING</p>
+<p><code>unsafe = true</code> allows raw HTML in Markdown. For a read-only blog that’s usually fine. If your site accepts user-supplied HTML, set this to <code>false</code> to reduce XSS risk.</p>
+</blockquote>
+<p><strong>params.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My name under profile&#34;</span> <span style="color:#75715e"># name shown under avatar</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;author name&#34;</span> <span style="color:#75715e"># browser tab title, footer copyright</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">profilePicture</span> = <span style="color:#e6db74">&#34;images/profile.jpg&#34;</span> <span style="color:#75715e"># avatar path</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mainSections</span> = [<span style="color:#e6db74">&#34;post&#34;</span>] <span style="color:#75715e"># sections treated as main content (posts)</span>
+</span></span></code></pre></div><p><strong>languages.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">disabled</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-CN&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;中文&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;你好，世界&#34;</span> <span style="color:#75715e"># profile description</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">localizedDates</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日 15:04&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">indexDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;1月2日&#34;</span>
+</span></span></code></pre></div><h3 id="social-links">Social links</h3>
+<p>Anatole supports social icons in the sidebar. Example for GitHub; more options are in the <a href="https://github.com/lxndrblz/anatole/wiki/1%EF%B8%8F%E2%83%A3-Essential-Steps#setting-up-the-social-icons-in-the-sidebar">theme wiki</a>.</p>
+<p><strong>params.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">socialIcons</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;fa-brands fa-github&#34;</span> <span style="color:#75715e"># GitHub icon</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Github&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;&lt;your-github-link&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">socialIcons</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;fas fa-envelope&#34;</span> <span style="color:#75715e"># email icon</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;e-mail&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;mailto:mail@example.com&#34;</span>
+</span></span></code></pre></div><h3 id="menus">Menus</h3>
+<p>Configure menu labels in <code>menus.toml</code>. For multiple languages you’ll use separate files like <code>menus.&lt;languageCode&gt;.toml</code>. Example of common items (customize as needed):</p>
+<p><strong>menus.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;首页&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">100</span> <span style="color:#75715e"># order in menu</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/post/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;关于我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;联系我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">400</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/contact/&#34;</span>
+</span></span></code></pre></div><p>After applying these settings, the site might look like this:</p>
+<figure>
+  <img src="/images/pic-hugo-init-example.png" alt="Configuration example" width="1000">
+  <figcaption>Configuration example</figcaption>
+</figure>
+<p>At this point the main setup is done. Here’s the flow in short:</p>
+<pre tabindex="0"><code>Install Hugo
+⬇️
+Initialize project locally
+⬇️
+Configure theme
+⬇️
+Create a post
+⬇️
+Connect GitHub
+⬇️
+Push content
+⬇️
+Refine configuration
+</code></pre><p>For future updates, you only need:</p>
+<pre tabindex="0"><code>Create or edit content
+⬇️
+Run hugo
+⬇️
+Push from public/
+</code></pre><h2 id="multi-language-setup">Multi-language setup</h2>
+<p>For multiple languages, adjust the config. This section shows Chinese and English.</p>
+<h3 id="languagestoml">languages.toml</h3>
+<p>Configure each language and its content directory. Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># language-level config</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;网页标题&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;中文&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-cn&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contentDir</span> = <span style="color:#e6db74">&#34;content/chinese&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">en</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;WebsiteTitle&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contentDir</span> = <span style="color:#e6db74">&#34;content/english&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># params per language</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Hello world&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">localizedDates</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleDateFormat</span> = <span style="color:#e6db74">&#34;Jan 2, 2006 15:04&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">indexDateFormat</span> = <span style="color:#e6db74">&#34;Jan 2, 2006&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;Jan 2&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;你好世界&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">localizedDates</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日 15:04&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">indexDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;1月2日&#34;</span>
+</span></span></code></pre></div><h3 id="menustoml">menus.toml</h3>
+<p>Use one menu file per language instead of a single <code>menus.toml</code>.</p>
+<p><strong>menus.zh.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;首页&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/post/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;关于我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/about/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;联系我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">400</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/contact/&#34;</span>
+</span></span></code></pre></div><p><strong>menus.en.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/post/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/about/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">400</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/contact/&#34;</span>
+</span></span></code></pre></div><h3 id="content">content</h3>
+<p>First, create one folder per language under <code>content</code> according to <code>contentDir</code> in <code>languages.toml</code>, for example:</p>
+<pre tabindex="0"><code>content/
+├── chinese/
+│   └── post/
+│       ├── about.toml
+│       ├── contact.toml
+│       └── article-chinese.md
+└── english/
+    └── post/
+        ├── about.toml
+        ├── contact.toml
+        └── article-english.md
+</code></pre><p>Then switching the site language will show the right content. Multi-language content means translating (or adapting) each post per language.</p>
+<p>Second, set <code>defaultContentLanguageInSubdir</code> to <code>true</code> so the default language is under <code>/zh</code> (or your default locale path).</p>
+<p>Third, add an <code>_index.md</code> under each <code>post</code> directory. Hugo will generate an <code>index.html</code> list page for that section. Without it, some themes won’t show the list.</p>
+<p>content/chinese/post/_index.md</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;文章&#34;
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>content/english/post/_index.md</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;POST&#34;
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>When creating posts with <code>hugo new</code>, use the full path for non-default languages, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new content/chinese/post/新文章.md
+</span></span></code></pre></div><h2 id="qa">Q&amp;A</h2>
+<p>Q: How do I set a post thumbnail?</p>
+<blockquote>
+<p>A: Add to the front matter: <code>thumbnail: &quot;images/xxx.png&quot;</code></p>
+</blockquote>
+<p>Q: The homepage shows the full post body</p>
+<blockquote>
+<p>A: Add a <code>&lt;!--more--&gt;</code> marker in the post to separate the summary from the rest.</p>
+</blockquote>
+<p>Q: Images don’t show</p>
+<blockquote>
+<p>A: Use an absolute path like <code>/images/...</code> (leading <code>/</code>) and put files under <code>static/images/</code>.</p>
+</blockquote>
+<p>Q: How do I make images smaller?</p>
+<blockquote>
+<p>A: Use an HTML tag: <code>&lt;img src=&quot;...&quot; width=&quot;500&quot;&gt;</code>, or a <code>&lt;figure&gt;</code> for an image with a caption.</p>
+</blockquote></div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/en/categories/tech/">Tech</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/en/tags/hugo/">Hugo</a><a class="tag" href="/en/tags/githubpages/">GithubPages</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Cosy Zone
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

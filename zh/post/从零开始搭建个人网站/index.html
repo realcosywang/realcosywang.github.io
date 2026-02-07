@@ -1,0 +1,784 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="zh"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+      
+        从零开始搭建免费的静态网站 |
+      Cosy Zone
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.155.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Cosy Zone" />
+  <meta
+    name="description"
+    content="使用Hugo和Github Pages搭建免费的静态网站"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.d1a2db4db62630dc690a91ef034ed2fbecab93af4a610b9b8966d9f96705289c.css" integrity="sha256-0aLbTbYmMNxpCpHvA07S&#43;&#43;yrk69KYQubiWbZ&#43;WcFKJw=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://realcosywang.github.io/zh/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="从零开始搭建免费的静态网站">
+  <meta name="twitter:description" content="使用Hugo和Github Pages搭建免费的静态网站">
+
+
+
+  
+  <meta property="og:url" content="https://realcosywang.github.io/zh/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">
+  <meta property="og:site_name" content="Cosy Zone">
+  <meta property="og:title" content="从零开始搭建免费的静态网站">
+  <meta property="og:description" content="使用Hugo和Github Pages搭建免费的静态网站">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-02-03T15:18:49+08:00">
+    <meta property="article:modified_time" content="2026-02-03T15:18:49+08:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="GithubPages">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "从零开始搭建免费的静态网站",
+        "headline": "从零开始搭建免费的静态网站",
+        "alternativeHeadline": "",
+        "description": "
+      使用Hugo和Github Pages搭建免费的静态网站
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "zh-cn",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/realcosywang.github.io\/zh\/post\/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Cosy Zone"
+        },
+        "dateCreated": "2026-02-03T15:18:49.00Z",
+        "datePublished": "2026-02-03T15:18:49.00Z",
+        "dateModified": "2026-02-03T15:18:49.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Cosy Zone",
+            "url": "https://realcosywang.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/realcosywang.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/realcosywang.github.io\/zh\/post\/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99\/",
+        "wordCount" : "3536",
+        "genre" : [ 
+      
+      "技术"
+
+    ],
+        "keywords" : [ 
+      
+      "Hugo"
+
+    
+      
+        ,
+
+      
+      "GithubPages"
+
+    ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/zh">Yifei</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>你好，我是王逸飞</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/realcosywang"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Github"
+            title="Github"
+          >
+            <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Cosy Zone
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/zh/"
+              
+              title=""
+              >首页</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/zh/post/"
+              
+              title=""
+              >文章</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/zh/about/"
+              
+              title=""
+              >关于我</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/zh/contact/"
+              
+              title=""
+              >联系我</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/images/thumbnail-zh-Hugo%20and%20github.png" alt="Thumbnail image" />
+      </div>
+    
+    <div class="post__content">
+      
+        <h1>从零开始搭建免费的静态网站</h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  2026年2月3日 15:18
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">阅读时间 8 分钟</span>
+          </li>
+        </ul>
+      <p>使用Hugo和Github Pages搭建免费的静态网站</p>
+<h2 id="必备条件">必备条件</h2>
+<p>想要快速搭建<a href="https://baike.baidu.com/item/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/2776875">静态网站</a>，需要简单掌握下面这些基本的技能。</p>
+<ul>
+<li>
+<p>拥有Github账号</p>
+</li>
+<li>
+<p>安装Git</p>
+</li>
+<li>
+<p>能够使用terminal</p>
+</li>
+</ul>
+<p>或许你已经开始嫌麻烦要打退堂鼓了，但是请不要害怕，这些技能在网上都有教程，而且很容易上手，本文将不再赘述。有了这些必备条件之后，我们就可以开始着手搭建了。</p>
+<h2 id="安装hugo">安装Hugo</h2>
+<p>对于macOS系统，使用<a href="https://blog.csdn.net/weixin_41918841/article/details/112545539">homebrew</a>指令安装hugo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><p>使用<code>version</code>检验安装完成</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><p>本文使用的版本是<code>hugo v0.155.0</code></p>
+<h2 id="初始化工程">初始化工程</h2>
+<p>安装好hugo之后，就可以开始初始化工程了。你希望hugo工程创建在哪个文件夹，使用cd指令跳转到这个文件夹下，接着用下面的命令初始化</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site &lt;your-project-name&gt;
+</span></span></code></pre></div><blockquote>
+<p>在本文中，<code>&lt;&gt;</code>一律代表需要您手动替换的内容。如果我的项目名称叫<code>my-site</code>，实际运行的指令应该是<code>hugo new site my-site</code></p>
+</blockquote>
+<p>之后你可以在文件夹中看到这样文件的结构</p>
+<pre tabindex="0"><code>my-site/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── content/
+├── data/
+├── i18n/
+├── layouts/
+├── static/
+├── themes/
+└── hugo.toml
+</code></pre><h2 id="配置主题">配置主题</h2>
+<p>你可以在<a href="https://themes.gohugo.io/">Hugo社区</a>选择你喜欢的主题风格。</p>
+<p>我使用的是Anatole，通过社区详情页面找到对应主题的github链接。</p>
+<figure>
+  <img src="/images/pic-hugo-community-detail.png" alt="详情页面" width="1000">
+  <figcaption>详情页面</figcaption>
+</figure>
+<p>我们可以将主题fork到自己的github中，接着使用git submodule的方式进行仓库链接。</p>
+<p><strong>本文之后如果没有特别强调，所有指令都在<code>/&lt;your-project-name&gt;</code>路径中执行。</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd  &lt;your-project-name&gt;/
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add &lt;your-github-url&gt;/&lt;your-theme-name&gt; themes/&lt;your-theme-name&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>example:
+</span></span><span style="display:flex;"><span>cd my-site
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/realcosywang/anatole themes/anatole
+</span></span></code></pre></div><blockquote>
+<p>Q：我为什么不直接使用主题仓库，反而要fork到自己的github中？</p>
+<p>A：因为之后你对主题进行修改之后，可能会与原主题产生一些冲突，不方便版本管理与后续更新，官方也更推荐将原主题仓库 <code>fork</code> 到自己的账户。</p>
+</blockquote>
+<p>接着在<code>hugo.toml</code>（老版本hugo的配置文件是<code>config.toml</code>）中增加一行配置</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;anatole&#34;</span>
+</span></span></code></pre></div><p>现在其实你已经把网站搭建好了，使用指令来启动本地服务</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><p>然后在浏览器中输入：<code>http://localhost:1313/</code>，可以看到带有主题的页面已经出现，现在我们已经成功了第一步🎉，后面将逐步完善页面。</p>
+<p>服务在启动状态时，任何对页面的改动都会实时生效，修改后无需重新启动服务。我们先不要按<code>Ctrl+C</code>停止服务，后面还需要增加配置并检查页面。</p>
+<h2 id="新建文章">新建文章</h2>
+<p>通过下面的指令创建文章</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new post/test-post.md
+</span></span></code></pre></div><p>文章会生成在<code>content/post/</code>路径下，这里的<code>post</code>路径不要随便改名，后面会用到。老版本hugo生成的md文件中会有一个字段<code>draft</code>，代表是否为草稿，如果值是<code>false</code>则文章默认不发表，修改成<code>true</code>才可以发表。</p>
+<p>现在我们回到浏览器就能看到新建的文章。</p>
+<figure>
+  <img src="/images/pic-hugo-test-post.png" alt="新建的文章" width="1000">
+  <figcaption>新建的文章</figcaption>
+</figure>
+<h2 id="关联github并推送文章">关联Github并推送文章</h2>
+<p>第一步： <strong>创建一个 Github 仓库</strong></p>
+<ol>
+<li>登录后，点击右上角，出现下拉菜单，点击 Your repositories 进入页面</li>
+<li>点击 New</li>
+<li>进入 Creat a new repository 页面</li>
+<li><code>Repository name</code> 这里一定要填 <code>[你的github账号].github.io</code>，像我的帳號是 <code>realcosywang</code>，所以我就要输入 <code>realcosywang.github.io</code>，然后点击 <code>[Create Repository]</code> 。</li>
+</ol>
+<p>第二步：执行hugo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>执行后，站点根目录下会生成一个 <code>public</code> 文件夹，该文件下的内容即Hugo生成的整个静态网站。每次更新内容后，将 <code>pubilc</code>目录里所有文件 push到GitHub即可。</p>
+<p>第三部：上传代码至 master</p>
+<p>首次使用的时候要执行以下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/realcosywang/realcosywang.github.io <span style="color:#75715e"># 将本地目录链接到远程服务器的代码仓库</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><p>稍等几分钟即可通过我们的自定义域名来访问我们的博客站点了，和我们 <code>hugo server</code> 本地调试完全一致。</p>
+<p>第四步：以后每次执行 <code>hugo</code> 命令后，再到<code>public</code>下执行推送命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><h2 id="完善配置">完善配置</h2>
+<p>我们可以看到现在页面上，除了刚才创建的一篇文章，剩下几乎是一片空白。现在就来完善配置，丰富页面的内容。</p>
+<p>在hugo中，默认只有<code>hugo.toml</code>一个配置文件，但如果把所有配置都放在这里，个人觉得有些杂乱无章，官方也推荐拆分配置，像下面这样</p>
+<pre tabindex="0"><code>config/
+└── _default/
+    ├── params.toml
+    ├── menus.toml
+    └── languages.toml
+</code></pre><p>这里提供创建文件的指令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir -p config/_default <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>touch config/_default/params.toml <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>      config/_default/menus.toml <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>      config/_default/languages.toml
+</span></span></code></pre></div><h3 id="个人信息">个人信息</h3>
+<p>首先，我们来配置个人信息。</p>
+<p>先准备一张头像放在<code>static/images/profile.jpg</code>，接着分别配置这几个文件</p>
+<p><strong>hugo.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span> <span style="color:#75715e"># 实际域名</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;anatole&#39;</span> <span style="color:#75715e"># 使用主题</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;zh&#34;</span> <span style="color:#75715e"># 默认语言</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguageInSubdir</span> = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># 默认语言是否需要在URL中指定路径</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">true</span> <span style="color:#75715e"># 支持计算中日韩语言的阅读时间</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#34;categories&#34;</span> <span style="color:#75715e"># 指定文章类别名称</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span> <span style="color:#75715e"># 指定文章标签名称</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><blockquote>
+<p>⚠️WARNING</p>
+<p><code>unsafe = true</code>会让Markdown允许HTML，作为个人博客浏览者无法输入信息时不会有任何问题，但如果你的网站支持别人输入HTML，请务必将其设置成<code>false</code>以防止网站被攻击。</p>
+</blockquote>
+<p><strong>params.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My name under profile&#34;</span> <span style="color:#75715e"># 作者名字[1]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;author name&#34;</span> <span style="color:#75715e"># 浏览器标签标题、页脚版权[2]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">profilePicture</span> = <span style="color:#e6db74">&#34;images/profile.jpg&#34;</span> <span style="color:#75715e"># 用户的头像[3]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mainSections</span> = [<span style="color:#e6db74">&#34;post&#34;</span>] <span style="color:#75715e"># 申明哪些 section 才算“主要内容”，应该被当作文章来展示</span>
+</span></span></code></pre></div><p><strong>languages.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">disabled</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-CN&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;中文&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;你好，世界&#34;</span> <span style="color:#75715e"># 个人描述[4]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">localizedDates</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日 15:04&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">indexDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;1月2日&#34;</span>
+</span></span></code></pre></div><h3 id="社交平台">社交平台</h3>
+<p>Anatole还支持配置社交平台以便浏览者访问，下面以Github为例说明如何配置，如需配置更多平台，请参考<a href="https://github.com/lxndrblz/anatole/wiki/1%EF%B8%8F%E2%83%A3-Essential-Steps#setting-up-the-social-icons-in-the-sidebar">这里</a>。</p>
+<p><strong>params.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">socialIcons</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;fa-brands fa-github&#34;</span> <span style="color:#75715e"># github图标[5]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Github&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;&lt;your-github-link&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">socialIcons</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;fas fa-envelope&#34;</span> <span style="color:#75715e"># 邮箱图标[6]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;e-mail&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;mailto:mail@example.com&#34;</span>
+</span></span></code></pre></div><h3 id="菜单">菜单</h3>
+<p>在<code>menus.toml</code>中配置菜单名称，如果有多语言则需要在多个<code>menus.&lt;languageCode&gt;.toml</code>中配置多次。下面是常用的一些菜单，你可以根据需求自定义菜单。</p>
+<p><strong>menus.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;首页&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">100</span> <span style="color:#75715e"># 在菜单列表中的排序</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/post/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;关于我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;联系我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">400</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/contact/&#34;</span>
+</span></span></code></pre></div><p>以上所有配置完成后示例如下。</p>
+<figure>
+  <img src="/images/pic-hugo-init-example.png" alt="配置完成示例" width="1000">
+  <figcaption>配置完成示例</figcaption>
+</figure>
+<p>到了这一步，其实我们基本已经大功告成了🎉，我们再来回顾一下全部的搭建流程</p>
+<pre tabindex="0"><code>安装hugo
+⬇️
+本地初始化工程
+⬇️
+配置主题
+⬇️
+新建文章
+⬇️
+关联Github
+⬇️
+推送文章
+⬇️
+完善配置
+</code></pre><p>后续新建/编辑文章只需要简化为这几步</p>
+<pre tabindex="0"><code>创建/编辑文章
+⬇️
+执行hugo
+⬇️
+推送文章
+</code></pre><h2 id="多语言配置">多语言配置</h2>
+<p>当我们有多语言的需求时，还需要修改配置。本文将示例支持中文和英文两种语言。</p>
+<h3 id="languagestoml">languages.toml</h3>
+<p>对于这个配置文件，我们只需要按需求配置不同语言的文案即可，示例如下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># 语言级别配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;网页标题&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;中文&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-cn&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contentDir</span> = <span style="color:#e6db74">&#34;content/chinese&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">en</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;WebsiteTitle&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contentDir</span> = <span style="color:#e6db74">&#34;content/english&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 不同语言的 params 配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Hello world&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">localizedDates</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleDateFormat</span> = <span style="color:#e6db74">&#34;Jan 2, 2006 15:04&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">indexDateFormat</span> = <span style="color:#e6db74">&#34;Jan 2, 2006&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;Jan 2&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">zh</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;你好世界&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">localizedDates</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">singleDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日 15:04&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">indexDateFormat</span> = <span style="color:#e6db74">&#34;2006年1月2日&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;1月2日&#34;</span>
+</span></span></code></pre></div><h3 id="menustoml">menus.toml</h3>
+<p>对于菜单，我们需要用多个配置文件替代原本的<code>menus.toml</code>。</p>
+<p><strong>menus.zh.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;首页&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/post/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;关于我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/about/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;联系我&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">400</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/zh/contact/&#34;</span>
+</span></span></code></pre></div><p><strong>menus.en.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/post/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/about/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">400</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;contact&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/en/contact/&#34;</span>
+</span></span></code></pre></div><h3 id="content">content</h3>
+<p>第一步，我们需要根据<code>languages.toml</code>中的<code>contentDir</code>分别去<code>content</code>路径下创建多个语言文件夹，例如</p>
+<pre tabindex="0"><code>ontent/
+└── chinese/
+    └── post/
+        ├── about.toml
+        ├── contact.toml
+        └── article-chinese.md
+└── english/
+    └── post/
+        ├── about.toml
+        ├── contact.toml
+        └── article-english.md
+</code></pre><p>这样，在网站上切换语言时，文章也会自动切换。创作内容的多语言意味着作者需要把每篇文章都翻译成其他语言以供使用不同语言的人阅读。</p>
+<p>第二步，修改把参数<code>defaultContentLanguageInSubdir</code>改成<code>true</code>以命中<code>/zh</code>路径。</p>
+<p>第三步，在<code>post</code>目录下放一个<code>_index.md</code>，这时hugo 就会为当前路径生成一个<code>index.html</code>列表页，显示该目录下所有文章的列表。没有<code>_index.md</code>的话，有些主题可能不会生成这个列表页。</p>
+<p>content/chinese/post/_index.md</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;文章&#34;
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>content/english/post/_index.md</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;POST&#34;
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>我们后续用hugo命令创建文章的时候，若非默认语言，则需要带上全路径，例如</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new content/chinese/post/新文章.md
+</span></span></code></pre></div><h2 id="qa">Q&amp;A</h2>
+<p>Q: 如何设置文章封面</p>
+<blockquote>
+<p>A: 在自动生成的文章参数中添加参数<code>thumbnail: &quot;images/xxx.png&quot;</code></p>
+</blockquote>
+<p>Q: 首页显示了文章的全部正文</p>
+<blockquote>
+<p>A: 在文章中添加 <!--more--> 标记来分隔摘要和正文。</p>
+</blockquote>
+<p>Q: 图片不显示</p>
+<blockquote>
+<p>A: 使用绝对路径 /images/&hellip;（开头有 /），图片文件放在 static/images/ 目录下。</p>
+</blockquote>
+<p>Q: 图片太大如何缩小？</p>
+<blockquote>
+<p>A: 使用 HTML 标签：<code>&lt;img src=&quot;...&quot; width=&quot;500&quot;&gt;</code>，或使用 <figure> 标签显示带描述的图片。</p>
+</blockquote></div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/zh/categories/%E6%8A%80%E6%9C%AF/">技术</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/zh/tags/hugo/">Hugo</a><a class="tag" href="/zh/tags/githubpages/">GithubPages</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Cosy Zone
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

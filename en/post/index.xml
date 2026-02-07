@@ -6,7 +6,18 @@
     <description>Recent content in Post on Cosy Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Jan 2026 08:34:40 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Feb 2026 15:18:49 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Free Static Site from Scratch</title>
+      <link>https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/</link>
+      <pubDate>Tue, 03 Feb 2026 15:18:49 +0800</pubDate>
+      
+      <guid>https://realcosywang.github.io/en/post/building-a-personal-site-from-scratch/</guid>
+      
+        <description>Building a free static site with Hugo and GitHub Pages</description>
+      
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>https://realcosywang.github.io/en/post/hello-world/</link>

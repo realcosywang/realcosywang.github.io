@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文章 on Cosy Zone</title>
-    <link>https://realcosywang.github.io/zh/post/</link>
-    <description>Recent content in 文章 on Cosy Zone</description>
+    <title>Hugo on Cosy Zone</title>
+    <link>https://realcosywang.github.io/zh/tags/hugo/</link>
+    <description>Recent content in Hugo on Cosy Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Feb 2026 15:18:49 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/zh/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Feb 2026 15:18:49 +0800</lastBuildDate><atom:link href="https://realcosywang.github.io/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>从零开始搭建免费的静态网站</title>
       <link>https://realcosywang.github.io/zh/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link>
@@ -15,17 +15,6 @@
       <guid>https://realcosywang.github.io/zh/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid>
       
         <description>使用Hugo和Github Pages搭建免费的静态网站</description>
-      
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://realcosywang.github.io/zh/post/hello-world/</link>
-      <pubDate>Sat, 31 Jan 2026 08:34:40 +0800</pubDate>
-      
-      <guid>https://realcosywang.github.io/zh/post/hello-world/</guid>
-      
-        <description>这是我的第一篇博客文章</description>
       
     </item>
     
